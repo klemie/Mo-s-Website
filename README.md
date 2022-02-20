@@ -13,9 +13,9 @@ Using SASS with the following folder structure.
 
 > Theme
 >  - Abstracts
->   - _utilities_
->   - _variables_
+>   _utilities_
+>   _variables_
 >  - Base
->   - _typography_
+>   _typography_
 >  - Components
->  - Layout
+>   _Layout_
