@@ -12,13 +12,15 @@ Theme controls the non-editable UI of the site. While plugins give my clients th
 Using SASS with the following folder structure. 
 
 Theme
-  Abstracts
+  **Abstracts**
   
   >_utilities_
   >_variables_
-  Base
+ 
+  **Base**
   
   >_typography_
-  Components
+ 
+  **Components**
   
   >_Layout_
