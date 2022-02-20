@@ -11,7 +11,8 @@ Theme controls the non-editable UI of the site. While plugins give my clients th
 
 Using SASS with the following folder structure. 
 
-Theme
+### Theme
+
   **Abstracts**
   
   >_utilities_
