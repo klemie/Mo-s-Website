@@ -1,5 +1,5 @@
 # Mos-Website
-React style and plugins for my freelance clients website 
+React style and plugins for my freelance clients wordpress website 
 
 ## Folder Structure
 
