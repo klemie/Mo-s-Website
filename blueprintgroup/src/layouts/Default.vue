@@ -10,8 +10,23 @@
       </nav>
     </header>
     <slot/>
+    <b-button>Button</b-button>
+    <Navigation />
   </div>
 </template>
+
+<script>
+
+import { BButton } from 'bootstrap-vue';
+import Navigation from '~/components/Navigation.vue'
+export default {
+  components: {
+    BButton,
+    Navigation
+  }
+}
+
+</script>
 
 <static-query>
 query {

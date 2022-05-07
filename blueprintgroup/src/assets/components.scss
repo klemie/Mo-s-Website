@@ -1,0 +1,9 @@
+@import 'variables.scss';
+.btn {
+    background-color: $dark-font;
+    border-radius: 24px!important;
+    color: ;
+}
+.btn.radius {
+    border-radius: 60px;
+}
