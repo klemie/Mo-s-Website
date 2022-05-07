@@ -1,9 +1,40 @@
-@import 'variables.scss';
+// @import 'variables.scss';
+$dark-font: #3D3D3D;
+
 .btn {
     background-color: $dark-font;
     border-radius: 24px!important;
-    color: ;
 }
 .btn.radius {
     border-radius: 60px;
+}
+
+.btn-text {
+    background-image: 
+        linear-gradient(
+            transparent 0%,
+            transparent 90%,
+            hotpink 90%,
+            hotpink 100%
+        );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+.btn-text:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+g-link {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+a:hover {
+    text-decoration:none;
 }

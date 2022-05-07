@@ -1,33 +1,55 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <img :src="logo" />
+    <div>
+      <h1>noun [c] ˈblueprint’</h1>
+    </div>
+    <div class="typewriter">
+      <p>A plan that describes how to do <br> or achieve something in the future</p>
+    </div>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Home'
+  },
+  data() {
+    return {
+      logo: require('~/NameLogo.svg')
+    }    
   }
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
+<style scoped>
+h1 {
+  color: #A06A46;
 }
+.typewriter p {
+  color: #000;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
 </style>
